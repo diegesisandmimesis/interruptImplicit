@@ -63,8 +63,9 @@ startRoom: Room 'Void'
 		_getOutOfBed();
 	}
 	_getOutOfBed() {
-		if(gAction.isImplicit) {
-			gInterruptImplicit;
+		//if(gAction.isImplicit) {
+			//gInterruptImplicit;
+		if(gInterruptImplicit == true) {
 			"After you stand up you pause to reflect upon
 				the interruption of implicit actions. ";
 		}

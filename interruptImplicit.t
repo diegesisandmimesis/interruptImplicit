@@ -19,8 +19,9 @@ interruptImplicitModuleID: ModuleID {
 interruptImplicitHandler: object
 	interruptImplicitAction() {
 		if(!gAction.isImplicit)
-			return;
+			return(nil);
 		gAction.callAfterActionMain(self);
+		return(true);
 	}
 	afterActionMain() {
 		exit;
